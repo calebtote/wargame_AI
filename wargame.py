@@ -8,7 +8,7 @@ import re
 import time
 
 bestMove = None
-BOARD_SIZE = 6
+BOARD_SIZE = 5
 NODES_SEARCHED = 0
 PRUNED_BRANCHES = 0
 
@@ -314,8 +314,6 @@ def HumanGuess(game):
         print '+'*55
         nextMoveType = raw_input('Choose a move type --- Para-drop {1}  |  Death-blitz {2}:  ')
         try:
-            print nextMoveType
-            print int(nextMoveType)
             MoveType(int(nextMoveType))
         except:
             print 'Invalid Move Type chosen. Please try again.'
