@@ -45,7 +45,7 @@ class Player(object):
         if self.isPruner:
             self.maxDepth = 4
         else:
-            self.maxDepth = 3
+            self.maxDepth = 2
         
         self.score = 0
         self.claimedCells = set()
@@ -314,6 +314,8 @@ def HumanGuess(game):
         print '+'*55
         nextMoveType = raw_input('Choose a move type --- Para-drop {1}  |  Death-blitz {2}:  ')
         try:
+            print nextMoveType
+            print int(nextMoveType)
             MoveType(int(nextMoveType))
         except:
             print 'Invalid Move Type chosen. Please try again.'
