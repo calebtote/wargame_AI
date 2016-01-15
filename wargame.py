@@ -353,8 +353,8 @@ def Run(game):
         game.shouldPrune = game.currentPlayer.isPruner
 
         if game.currentPlayer == player1:
-            #nextMove = HumanGuess(game)
-            nextMove = AIGuess(game)
+            nextMove = HumanGuess(game)
+            #nextMove = AIGuess(game)
         else:
             #nextMove = HumanGuess(game)
             nextMove = AIGuess(game)
@@ -388,8 +388,8 @@ if __name__ == '__main__':
                 col += 1
             row += 1
 
-    player1 = Player(PlayerType.MaxPlayer, 'Player 1',True)
-    player2 = Player(PlayerType.MinPlayer, 'Player 2', True)
+    player1 = Player(PlayerType.MaxPlayer, 'Player 1', False)
+    player2 = Player(PlayerType.MinPlayer, 'Player 2', False)
     GameState = Game(theBoard, (player1,player2))
     GameState.PrintCurrentState()
     #cProfile.run('Run(GameState)')
