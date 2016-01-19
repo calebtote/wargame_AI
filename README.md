@@ -1,9 +1,10 @@
 # Wargame
 A basic game concept used to demonstrate equally basic AI min/maxing.
 
-Goal:  To be the player with the highest score after all pieces are taken.
+##### Goal:  
+- To be the player with the highest score after all pieces are taken.
 
-Rules:
+##### Rules:
 - You have two move options: **Drop** and **Blitz**.
 - **Drop**: Claim an unclaimed piece, and it's points.
 ![drop](http://i.imgur.com/m55M6rU.png)
