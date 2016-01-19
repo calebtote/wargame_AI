@@ -1,6 +1,10 @@
 # Wargame
 A basic game concept used to demonstrate equally basic AI min/maxing.
 
+##### Requirements:
+- `Python 2.7`
+- `pip install Enum34`
+
 ##### Goal:  
 - To be the player with the highest score after all pieces are taken.
 
