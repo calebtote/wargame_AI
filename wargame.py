@@ -8,7 +8,7 @@ import re
 import time
 
 bestMove = None
-BOARD_SIZE = 5
+BOARD_SIZE = 6
 NODES_SEARCHED = 0
 PRUNED_BRANCHES = 0
 
@@ -193,7 +193,7 @@ class Game(object):
         return moveset
 
     def PrintCurrentState(self):
-        print '      A      B      C      D      E'#      F'#     G     H'
+        print '      A      B      C      D      E      F'#     G     H'
         for i in range(BOARD_SIZE):
             sys.stdout.write(str(i+1))
             for x in range(BOARD_SIZE):
