@@ -8,7 +8,7 @@ import re
 import time
 
 bestMove = None
-BOARD_SIZE = 6
+BOARD_SIZE = 5
 NODES_SEARCHED = 0
 PRUNED_BRANCHES = 0
 
